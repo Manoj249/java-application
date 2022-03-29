@@ -1,0 +1,26 @@
+apply plugin : 'java'
+apply plugin : 'war'
+
+publishing {
+    publications {
+maven(MavenPublication) {
+groupId ='test.java.app'
+artifactId = 'samplewebapp'
+version = '1.0'
+
+from components.java
+}
+
+
+}
+repositories {
+maven {
+name = "test.java.app" //  optional target repository name
+url = "http://54.157.254.79:8081/repository/test.java.app/"
+credentials {
+username = 'admin'
+password = 'admin123'
+}
+}
+}
+}
