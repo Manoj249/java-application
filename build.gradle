@@ -10,7 +10,6 @@ artifactId = 'samplewebapp'
 version = '1.0'
 
 from components.java
-supressPomMetadatawWarningsFor('runtimeElements')
 }
 
 
