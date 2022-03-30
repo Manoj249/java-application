@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: Webapp-Deployment
+    name: webapp-deployment
 spec:
     replicas: 3
     selector:
         matchLabels:
-            app: webapp-Pod
-            version: 1.0
+            app: webapp-pod
+            version: v1
     template:
         metadata:
-            name: webapp-Pod
+            name: webapp-pod
             labels:
-                app: webapp-Pod
-                version: 1.0
+                app: webapp-pod
+                version: v1
         spec:
             containers:
             -  name: webapp
@@ -22,4 +22,4 @@ spec:
                ports:
                 - containerPort: 8080
 	       imagePullSecrets:
-		- name: dockerhub_cred
+		- name: dockerhub-cred
