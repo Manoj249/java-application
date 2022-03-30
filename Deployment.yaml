@@ -18,7 +18,7 @@ spec:
             containers:
             -  name: webapp
                image: manojvarma249/webapp:1.0
-               imagePullPolicy: IfNotPresent
+               imagePullPolicy: Always
                ports:
                 - containerPort: 8080
             imagePullSecrets:
