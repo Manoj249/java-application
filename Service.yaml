@@ -6,7 +6,7 @@ metadata:
         app: webapp-deployment
 spec:
     selector:
-        app: Webapp-pod
+        app: webapp-pod
         version: v1
     type: NodePort
     ports:
