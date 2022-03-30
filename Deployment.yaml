@@ -19,7 +19,7 @@ spec:
         spec:
             containers:
             -  name: webapp
-               image: $DOCKER_IMAGE
+               image: manojvarma249/webapp:latest
                imagePullPolicy: Always
                ports:
                 - containerPort: 8080
